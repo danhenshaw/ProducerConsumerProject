@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     
-    // Each button has an assigned tag so that we can use th same function to perform the addition of a Consumer or Producer
+    // Each button has an assigned tag so that we can use the same function to perform the addition of a new Consumer or Producer
     @objc func buttonPressed(_ sender: UIButton) {
         
         var data: DataModel?
