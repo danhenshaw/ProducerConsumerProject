@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var dataArray = [DataModel]()
     
     // cellCount is a variable updated by the Model to either add or subtract a value.
-    // Everytime the cllCount changs, the table is updated.
+    // Everytime the cellCount changes, the table is updated.
     var cellCount = 0 {
         didSet {
             mainView.tableView.reloadData()
@@ -86,7 +86,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.tableViewCellReuseIdentifier, for: indexPath) as! TableViewCell
-        // Each new cell will b assignd a title of "CELL (indexPath.row)"
+        // Each new cell will be assigned a title of "CELL (indexPath.row)"
         cell.bindWith("CELL \(indexPath.row)")
         return cell
     }

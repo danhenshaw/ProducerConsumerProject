@@ -8,7 +8,7 @@
 
 import Foundation
 
-// DataModel has two types (Consumer or Producer) and depending on the typee set, the Model will b initialised with either a 3 second timer to add 1 to cellCount in ViewController or a 4 second timr to minus 1 from cellCount.
+// DataModel has two types (Consumer or Producer) and depending on the typee set, the Model will be initialised with either a 3 second timer to add 1 to cellCount in ViewController or a 4 second timer to minus 1 from cellCount.
 
 enum DataType {
     case producer, consumer
