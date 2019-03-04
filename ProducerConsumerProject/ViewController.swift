@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         mainView.consumerButton.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
     // Each button has an assigned tag so that we can use th same function to perform the addition of a Consumer or Producer
     @objc func buttonPressed(_ sender: UIButton) {
