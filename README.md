@@ -18,9 +18,9 @@ This project should be done in about 2 hours.
 
 ## Solution
 
-- When a user presses the Producer or Consumer button, we initial a new Model which is stored in an array in the View Controller. 
-- Every new model is initialised with a type of either Producer or Consumer and a timr is set for the specified time.
+- When a user presses the Producer or Consumer button, we initialise a new Model which is stored in an array in the View Controller. 
+- Every new model is initialised with a type of either Producer or Consumer and a timer which is set for the specified time.
 - When the timer is fired, we will use the delegate protocol to add 1 or subtract 1 from a variable in the View Controller called cellCount.
-- Everytime the variable 'cellCount' is updated, th table view's data is reloaded.
+- Everytime the variable 'cellCount' is updated, the table view's data is reloaded.
 - Everytime the users clicks a button, the button titles are updated to show how many Prodcuers and Consumers exist.
 - Each new cell added to the table is simply call "Cell (indexPath.row)"
